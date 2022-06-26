@@ -3,6 +3,7 @@ function pattern3(){
     let numbers = /^([0-9]{3})[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
 
     if(numbers.test(number)){
+        let error=document.getElementById("error")
         form.classList.add("valid");
         form.classList.remove("invalid");
         error.innerHTML="Your Phone number is valid";
